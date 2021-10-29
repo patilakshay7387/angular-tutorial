@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ol>
+          <li>Create two new Components (manually or with CLI): WarningAlert and SuccessAlert</li>
+          <li>Output them beneath each other in the AppComponent</li>
+          <li>Output a warning or success message in the Components</li>
+          <li>Style the Components appropriately (maybe some red/ green text?)</li>
+        </ol>
+        <p>Use external or internal templates and styles!</p>
+        <p>Feel free to create more components, nest them into each other or play around with different types of selectors!</p>
+      </div>
+
+      <div>
+        <h1 [innerText]="namee"></h1>
+        <!-- Property binding --> <br>
+        <button [disabled]="isDisabled">Submit</button>
+      </div>
+      <br>
+      <div>
+        Enter your name: <input type="text" name="fname" id="fname" (blur)="capital()">
+        <!-- Event Binding -->
+      </div>
+      <br><br>
+
+      </div>
+  
+  </div>
+  
+<app-success-alert></app-success-alert>
+<!-- <app-warning-alert></app-warning-alert> -->
+
+<div app-warning-alert></div> 
+<!-- Selector as an Attribute -->
+  
