@@ -10,6 +10,7 @@ export class Server2Component implements OnInit {
 
   namee= "Angular Property Binding"
   isDisabled=true;
+  isLogedin=true;
 
   capital() {
     let x = document.getElementById("fname");
