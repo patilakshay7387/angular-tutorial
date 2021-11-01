@@ -20,6 +20,11 @@
       <br>
       <div>
         Enter your name👉: <input type="text" name="fname" id="fname" (blur)="capital()">
+
+        <input type="text" [(ngModel)]="nameee">
+        <p>{{ nameee }}</p>
+
+
         <!-- Event Binding -->
       </div>
       <br><br>
@@ -39,5 +44,7 @@
 <!-- <app-warning-alert></app-warning-alert> -->
 
 <div app-warning-alert></div> 
+
+<app-serverlist></app-serverlist>
 <!-- Selector as an Attribute -->
   
