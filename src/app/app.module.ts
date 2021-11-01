@@ -7,6 +7,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { FormsModule } from '@angular/forms';
 import { ServerlistComponent } from './serverlist/serverlist.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -19,9 +20,19 @@ import { ServerlistComponent } from './serverlist/serverlist.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+
+      {
+        path:'serverlist',
+        component:ServerlistComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
+
 export class AppModule { }

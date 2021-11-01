@@ -13,6 +13,10 @@
       </div>
 
       <div>
+
+        <a [routerLink]='["/serverlist"]'>Movies</a>
+
+        <router-outlet></router-outlet>
         <h1 [innerText]="namee"></h1>
         <!-- Property binding --> <br>
         <button [disabled]="isDisabled">😄Submit</button>
@@ -27,6 +31,7 @@
 
         <!-- Event Binding -->
       </div>
+      
       <br><br>
 
       <div *ngif="!isLogedin">
@@ -34,6 +39,10 @@
       </div>
       <div *ngif="isLogedin">
         <h4>Welcome✌</h4>
+      </div>
+      <div>
+      
+
       </div>
 
       </div>
@@ -45,6 +54,6 @@
 
 <div app-warning-alert></div> 
 
-<app-serverlist></app-serverlist>
+
 <!-- Selector as an Attribute -->
   
