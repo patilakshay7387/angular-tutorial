@@ -5,16 +5,21 @@ import { AppComponent } from './app.component';
 import { Server2Component } from './server2/server2.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { FormsModule } from '@angular/forms';
+import { ServerlistComponent } from './serverlist/serverlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Server2Component,
     WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    ServerlistComponent,
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
