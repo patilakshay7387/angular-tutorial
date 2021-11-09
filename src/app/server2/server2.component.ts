@@ -9,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class Server2Component implements OnInit {
 
   nameee = 'basics';
-  namee= "Angular Property Binding"
+  namee= "mangesh";
+  id=1;
   isDisabled=false;
   isLogedin=true;
 
