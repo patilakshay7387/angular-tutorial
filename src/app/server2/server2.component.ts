@@ -10,7 +10,7 @@ export class Server2Component implements OnInit {
 
   nameee = 'basics';
   namee= "Angular Property Binding"
-  isDisabled=true;
+  isDisabled=false;
   isLogedin=true;
 
   capital() {
